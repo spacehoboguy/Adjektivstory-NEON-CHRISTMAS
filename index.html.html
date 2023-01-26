@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjective Story</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+        body{
+            background-color: black;
+            color: pink;
+            font-family: 'Unbounded', cursive;
+            user-select: none;
+        }
+         /*    h1{
+            text-shadow: pink 3px 3px 10px; 
+        } */
+       a1{
+        color: aquamarine;
+            text-decoration: underline;
+            text-underline-position: auto;
+       }
+
+        button {
+            font-family: 'Unbounded', cursive;
+            font-size: 10px;
+            width: 93px;
+            height: 25px;
+            cursor: pointer;
+            background-color: rgb(0, 0, 0);
+            color:pink;
+            border: solid .1px aqua;
+            border-radius: 10px;
+            box-shadow: pink 0px 8px 24px;
+            margin: 1px;
+        }
+       
+
+        button:hover {
+            color: aquamarine;
+            text-shadow: pink 2px 2px 2px;
+            box-shadow: aquamarine 0px 8px 24px;
+            //text-decoration: underline;
+            text-underline-position: auto;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <p id="app"></p>
+    <script>
+
+        //MODEL
+        var Adjective1 = '______'
+        var Adjective2 = '______'
+        var Adjective3 = '______'
+        var Adjective4 = '______'
+        var Adjective5 = '______'
+
+        //VIEW
+        updateView();
+        function updateView() {
+            document.getElementById('app').innerHTML = /*HTML*/`
+                <h1>NEON CHRISTMAS</h1>
+                <p class="Story">Det var en <a1>${Adjective1}</a1> jul i Bogstadveien 42. 
+                Den <a1>${Adjective2}</a1> nissen hadde gått seg vill i den <a1>${Adjective3}</a1> byen Oslo. 
+                Hva den <a1>${Adjective4}</a1> familien Hansen skulle gjøre var ikke kjent, 
+                men at en <a1>${Adjective5}</a1> Jul var rundt hjørnet var ikke i tvil.<p/>
+                <div class="button b1">
+                <button onclick="setAdjective1(this)">spenningsfylt</button>
+                <button onclick="setAdjective1(this)">stressende</button>
+                <button onclick="setAdjective1(this)">hektisk</button>
+                <button onclick="setAdjective1(this)">gledelig</button>
+                <button onclick="setAdjective1(this)">rolig</button>
+            </div>
+            <div class="button b2">   
+                <button onclick="setAdjective2(this)">glade</button>
+                <button onclick="setAdjective2(this)">overvektige</button>
+                <button onclick="setAdjective2(this)">røde</button>
+                <button onclick="setAdjective2(this)">bamseaktige</button>
+                <button onclick="setAdjective2(this)">klumsete</button>
+            </div>
+            <div class="button b3">
+                <button onclick="setAdjective3(this)">store</button>
+                <button onclick="setAdjective3(this)">folketette</button>
+                <button onclick="setAdjective3(this)">ville</button>
+                <button onclick="setAdjective3(this)">rotete</button>
+                <button onclick="setAdjective3(this)">gale</button>
+            </div>
+            <div class="button b4">   
+                <button onclick="setAdjective4(this)">lille</button>
+                <button onclick="setAdjective4(this)">kjærlige</button>
+                <button onclick="setAdjective4(this)">lykkelige</button>
+                <button onclick="setAdjective4(this)">jålete</button>
+                <button onclick="setAdjective4(this)">gjerrige</button>
+            </div>
+            <div class="button b5">
+                <button onclick="setAdjective5(this)">kort</button>
+                <button onclick="setAdjective5(this)">lang</button>
+                <button onclick="setAdjective5(this)">hvit</button>
+                <button onclick="setAdjective5(this)">god</button>
+                <button onclick="setAdjective5(this)">koselig</button>
+            </div>
+                `;
+        }
+
+        //CONTROLLER
+        function setAdjective1(first) {
+            Adjective1 = first.textContent;
+            updateView();
+        }
+        function setAdjective2(second) {
+            Adjective2 = second.textContent;
+            updateView();
+        }
+        function setAdjective3(third) {
+            Adjective3 = third.textContent;
+            updateView();
+        }
+        function setAdjective4(fourth) {
+            Adjective4 = fourth.textContent;
+            updateView();
+        }
+        function setAdjective5(fifth) {
+            Adjective5 = fifth.textContent;
+            updateView();
+        }
+    </script>
+</body>
+
+</html>
