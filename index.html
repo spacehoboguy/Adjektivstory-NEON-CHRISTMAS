@@ -13,16 +13,19 @@
             color: pink;
             font-family: 'Unbounded', cursive;
             user-select: none;
+            min-width: 350px;
         }
-         /*    h1{
-            text-shadow: pink 3px 3px 10px; 
-        } */
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
        a1{
         color: aquamarine;
             text-decoration: underline;
             text-underline-position: auto;
        }
-
+       
         button {
             font-family: 'Unbounded', cursive;
             font-size: 10px;
@@ -36,15 +39,23 @@
             box-shadow: pink 0px 8px 24px;
             margin: 1px;
         }
+       .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+       }
+       p{
+        display: flexbox;
+        margin: 20px;
+        align-self: center;
+       }
        
 
         button:hover {
             color: aquamarine;
             text-shadow: pink 2px 2px 2px;
             box-shadow: aquamarine 0px 8px 24px;
-            //text-decoration: underline;
-            text-underline-position: auto;
-           
         }
     </style>
 </head>
@@ -82,28 +93,28 @@
                 <button onclick="setAdjective2(this)">røde</button>
                 <button onclick="setAdjective2(this)">bamseaktige</button>
                 <button onclick="setAdjective2(this)">klumsete</button>
-            </div>
+           </div>
             <div class="button b3">
                 <button onclick="setAdjective3(this)">store</button>
                 <button onclick="setAdjective3(this)">folketette</button>
                 <button onclick="setAdjective3(this)">ville</button>
                 <button onclick="setAdjective3(this)">rotete</button>
                 <button onclick="setAdjective3(this)">gale</button>
-            </div>
+           </div>
             <div class="button b4">   
                 <button onclick="setAdjective4(this)">lille</button>
                 <button onclick="setAdjective4(this)">kjærlige</button>
                 <button onclick="setAdjective4(this)">lykkelige</button>
                 <button onclick="setAdjective4(this)">jålete</button>
                 <button onclick="setAdjective4(this)">gjerrige</button>
-            </div>
+             </div>
             <div class="button b5">
                 <button onclick="setAdjective5(this)">kort</button>
                 <button onclick="setAdjective5(this)">lang</button>
                 <button onclick="setAdjective5(this)">hvit</button>
                 <button onclick="setAdjective5(this)">god</button>
                 <button onclick="setAdjective5(this)">koselig</button>
-            </div>
+           </div>
                 `;
         }
 
