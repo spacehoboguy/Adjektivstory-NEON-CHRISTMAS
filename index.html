@@ -17,7 +17,6 @@
         }
 
         h1{
-            display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
@@ -64,11 +63,18 @@
             text-shadow: pink 2px 2px 2px;
             box-shadow: aquamarine 0px 8px 24px;
         }
+        img{
+            z-index: -1;
+            width: 100px;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+        }
     </style>
 </head>
 
 <body>
     <p id="app"></p>
+    <img src="" alt="">
     <script>
 
         //MODEL
@@ -82,7 +88,7 @@
         updateView();
         function updateView() {
             document.getElementById('app').innerHTML = /*HTML*/`
-                <h1>NEON CHRISTMAS</h1>
+                <h1>NEON CHRISTMAS <img src="pngimg.com - cocktail_PNG83.png" alt=""></h1>
                 <p class="Story">Det var en <a1>${Adjective1}</a1> jul i Bogstadveien 42. 
                 Den <a1>${Adjective2}</a1> nissen hadde gått seg vill i den <a1>${Adjective3}</a1> byen Oslo. 
                 Hva den <a1>${Adjective4}</a1> familien Hansen skulle gjøre var ikke kjent, 
