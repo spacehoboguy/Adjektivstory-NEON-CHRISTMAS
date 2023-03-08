@@ -8,58 +8,62 @@
     <title>Adjective Story</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
-        *{
+
+        * {
             font-size: 1.5rem;
         }
-        body{
+
+        body {
             background-color: black;
             color: pink;
             font-family: 'Unbounded', cursive, Helvetica, sans-serif;
             user-select: none;
+            display: flex;
+            width: auto;
         }
 
-        h1{
+        h1 {
             text-align: center;
             justify-content: center;
             align-items: center;
             font-size: 2rem;
         }
 
-        a1{
-        color: aquamarine;
+        a1 {
+            color: aquamarine;
             text-decoration: underline;
             text-underline-position: auto;
-       }
-       
+        }
+
         button {
             font-family: 'Unbounded', cursive;
-            font-size: .7rem;
-            width: 150px;
+            font-size: 1rem;
+            width: 220px;
             height: 35px;
             cursor: pointer;
             background-color: rgb(0, 0, 0);
-            color:pink;
+            color: pink;
             border: solid .1px aqua;
             border-radius: 10px;
             box-shadow: pink 0px 8px 24px;
             margin: 2px;
         }
 
-       .button{
+        .button {
             display: flex;
+            flex: grow;
             justify-content: center;
-            align-items: center;
-           
+              align-items: center;
+
         }
 
-       p{
-        font-size: 1rem;
+        p {
+
+            font-size: 1rem;
             text-align: center;
-            display: flexbox;
             margin: 20px;
-           /*  margin-right: 10%;
+            /*  margin-right: 10%;
             margin-left: 10%; */
-            align-self: center;
         }
 
         button:hover {
@@ -67,10 +71,11 @@
             text-shadow: pink 2px 2px 2px;
             box-shadow: aquamarine 0px 8px 24px;
         }
-        img{
+
+        img {
             z-index: -1;
             width: 100px;
-            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
         }
     </style>
 </head>
